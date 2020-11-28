@@ -1,4 +1,4 @@
-# Flask-API-TEST
+# Flask_API-TEST
 
 Simple Rest API to download users form github API and store it on sqlite database.
 
@@ -20,23 +20,25 @@ This project requires [Python](https://nodejs.org/) v3.6+ to run.
 
 You can create a venv enviroment with the following command.
 
-linux/max 
+Linux/Mac 
 ```sh
-$ cd flask-api
+$ cd flask_api
+$ python -m venv ./venv 
 $ source venv/bin/activate 
 $ pip install -r requirements.txt 
 ```
 
 Windows 
 ```sh
-$ cd flask-api
+$ cd flask_api
+$ python -m venv ./venv 
 $ source venv/Scripts/activate 
 $ pip install -r requirements.txt 
 ```
 
 
 Rename the .env.exmaple to .env
-### Run (Inside on the docker container)
+### Run the following to start the project
 
 ```sh
 $ python flask_api/run.py
@@ -55,7 +57,7 @@ seed db
 $ http://localhost:5000/api/v1/seed_db
 $ http://localhost:5000/api/v1/seed_db?total=250
 ```
-You cand pass as parameter the amount of data that you want to download. The Insertions is on a batch process
+You cand pass as parameter the amount of data that you want to download. The Insertions code is a batch process to optimize the queries
 
 clean db
 ```sh
@@ -84,3 +86,6 @@ $ nosetests --verbosity=2 test_github_repository.py
   [dotenv]: <https://pypi.org/project/python-dotenv/>
 
  
+
+
+
