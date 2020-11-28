@@ -1,0 +1,7 @@
+flask
+Flask-SQLAlchemy
+Flask-Testing
+SQLAlchemy
+python-dotenv
+requests
+nose
